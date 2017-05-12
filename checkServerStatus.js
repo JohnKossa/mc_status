@@ -23,7 +23,7 @@ module.exports = {
 			if(err){
 				next(err, false);
 			}else{
-				next(null, stdout == "4\n");//2 for running processes, 1 for the grep command, 1 for child_process command
+				next(null, stdout == "3\n");//1 for running process, 1 for the grep command, 1 for child_process command
 			}
 		});
 	}
