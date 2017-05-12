@@ -4,21 +4,22 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-	"type": "git",
-	"url": "https://github.com/JohnKossa/mc_status.git"
+    "type": "git",
+    "url": "https://github.com/JohnKossa/mc_status.git"
   },
   "author": "",
   "license": "Unlicensed",
   "bugs": {
-	"url": "https://github.com/JohnKossa/mc_status/issues"
+    "url": "https://github.com/JohnKossa/mc_status/issues"
   },
   "homepage": "https://github.com/JohnKossa/mc_status",
   "dependencies": {
-	"child_process": "^1.0.2",
-	"express": "^4.15.2",
-	"pug": "^2.0.0-rc.1"
+    "async": "^2.4.0",
+    "child_process": "^1.0.2",
+    "express": "^4.15.2",
+    "pug": "^2.0.0-rc.1"
   }
 }
