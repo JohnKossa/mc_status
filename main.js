@@ -2,11 +2,15 @@
  * Created by Kosine on 5/11/2017.
  */
 var checkServerStatus = require("./checkServerStatus");
+var path = require("path");
 var async = require("async");
 var express = require('express');
 var app = express();
+app.use(require('less-middleware')(path.join(__dirname, 'public/styles')));
+app.use(express.static(path.join(__dirname, 'public/styles')));
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.set('views', './views');
+app.set('views', './public/views');
 app.set('view engine', 'pug');
 
 app.get('/', function(req, res){

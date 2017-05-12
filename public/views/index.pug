@@ -1,0 +1,32 @@
+- var vanilla_string = vanilla_status ? "glyphicon glyphicon-ok" : "glyphicon glyphicon-remove"
+- var direwolf20_string = direwolf20_status ? "glyphicon glyphicon-ok" : "glyphicon glyphicon-remove"
+html
+	head
+		link(rel="stylesheet", href="bootstrap.min.css")
+		link(rel="stylesheet", href="bootstrap-theme.min.css")
+		link(rel="stylesheet", href="styles.css")
+	body
+		div(id="main")
+			h1 Welcome to the Cabalpit Minecraft server!
+			h3 Current servers are
+			table
+				thead
+					tr
+						td Port
+						td Server
+						td Version
+						td Status
+				tbody
+					tr
+						td 25565
+						td Vanilla
+						td 1.9.4
+						td
+							span(class=vanilla_string)
+					tr
+						td 25566
+						td Direwolf20
+						td 1.10
+						td
+							span(class=direwolf20_string)
+		script(src="js/bootstrap.min.js")
