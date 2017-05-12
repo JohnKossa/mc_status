@@ -20,6 +20,6 @@ app.get('/', function(req, res){
 
 });
 
-app.listen(80, function(){
-    console.log("mc_server is now online and listening on port 80");
+app.listen(5000, function(){
+    console.log("mc_server is now online and listening on port 5000");
 });
